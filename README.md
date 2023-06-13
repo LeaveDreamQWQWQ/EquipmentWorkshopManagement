@@ -5,6 +5,7 @@
 ## Introduction
 
 For using this program, you need to get your own [wechat applet ID](https://mp.weixin.qq.com/cgi-bin/wx) first, and load those codes through [wechat developer tool](https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html).  
-After that, please check all pages including `.js` documents
+After that, please check all pages including `.js` and `.config` documents, you need input your own information about **wechat applet ID**. Besides, please enter your **Cloud Develop** on the upper left corner of wechat developer tool, create database as follow:  
+
 
 
