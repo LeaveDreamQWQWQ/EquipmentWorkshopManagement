@@ -5,6 +5,6 @@
 ## Introduction
 
 For using this program, you need to get your own [wechat applet ID](https://mp.weixin.qq.com/cgi-bin/wx) first, and load those codes through [wechat developer tool](https://developers.weixin.qq.com/miniprogram/dev/devtools/stable.html).  
-After that, please check all pages including '.js' documents and , and 
+After that, please check all pages including `.js` documents
 
 
