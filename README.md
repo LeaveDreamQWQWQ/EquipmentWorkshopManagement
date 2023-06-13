@@ -41,10 +41,24 @@ After that, please check all pages including `.js` and `.config` documents, you 
   | name | equipment | `String` | Equipment name | need to indicate the number of equipment (number of 3D printers) |
   | stuName | person | `String` | Enter the name of the person using the information | Initialize to empty set and enter user name |
   | startTime | time | `String` | Enter the start time of the device | When the user makes an appointment, personal information is entered together, forcing the end of the process or the completion of data conversion (current data to historical data) after reset |
-  | duration | time | `number` | Enter the duration of device use | Do the same as above |
+  | duration | time | `number` | Enter the duration of device use | Same as above |
   
 - **past database (just increase, no change)**
+  | data name | types | data types | usage | explanation |
+  | --------- | ----- | ---------- | ----- | ----------- |
+  | name | equipment | `String` | Equipment name | need to indicate the number of equipment (number of 3D printers) |
+  | stuName | person | `String` | Records information about users who have used the device in the past | Receives array data writes from present when the process is autocomplete or forced to end |
+  | startTime | time | `String` | Records the device start time of the past user | Same as above |
+  | duration | time | `number` | Records the device duration set by the user in the past | Same as above |
+  | finishTime | time | `String` | Records the device finish time of the past user | This data is entered when the user forcibly ends or automatically generated after the end time, and is written together with the above data, but the source is not necessarily the same |
   
+- **malfunction database (just increase, no change)**
+  | data name | types | data types | usage | explanation |
+  | --------- | ----- | ---------- | ----- | ----------- |
+  | name | equipment | `String` | Record the name of the current device | Upload the device name to this database location when a fault is reported |
+  | stuName | person | `String` | Record information about personnel who report equipment failures | The user's name information (global variable) is read when the fault is reported and uploaded to the database location |
+  | startTime | time | `String` | Record the time when a device fault was reported | When a fault is reported, the current time is automatically read and uploaded to the database location |
+  | message | meesage | `String` | Record device fault information | When the fault is reported, the user is given an input box, according to which the user can enter the fault information, and the fault information is uploaded to this location in the database when the database is uploaded |
   
   
   
