@@ -62,6 +62,19 @@ After that, please check all pages including `.js` and `.config` documents, you 
   
 After completing the above sections, deploy all cloud functions and install dependencies, and everthing is OK!
 
+## Special Thanks
+
+Thanks to my teamates Juncheng Lin, Yitao Tan, and Yifei Luo. Without them, there is no way to finish this program. Actually, there is still a lot of disadvantages needed to be solved, and it is just a fundamentally structure. 
+
+## Reference
+
+[小程序JS，同步与异步](https://www.bilibili.com/video/BV1iT4y1f7dY?p=4)
+[Promise.then(）的详细介绍](https://blog.csdn.net/chenjie9230/article/details/107129286)
+[优雅地使用async await](https://juejin.cn/post/7042586636583960584)
+[ES7使用的准备](https://developers.weixin.qq.com/community/develop/article/doc/0008ee7efe4cf0a25799a071c5b013)
+[小程序开发官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)
+
+
   
   
 
