@@ -11,6 +11,8 @@ After that, please check all pages including `.js` and `.config` documents, you 
 - **equipment database**
   | data name | types | data types | usage | explanation |
   | --------- | ----- | ---------- | ----- | ----------- |
+  | name | equipment | `String` | equipment name | need to indicate the number of equipment (number of 3D printers) |
+  
 
 
 
