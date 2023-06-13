@@ -60,6 +60,8 @@ After that, please check all pages including `.js` and `.config` documents, you 
   | startTime | time | `String` | Record the time when a device fault was reported | When a fault is reported, the current time is automatically read and uploaded to the database location |
   | message | meesage | `String` | Record device fault information | When the fault is reported, the user is given an input box, according to which the user can enter the fault information, and the fault information is uploaded to this location in the database when the database is uploaded |
   
+After completing the above sections, deploy all cloud functions and install dependencies, and everthing is OK!
+
   
   
 
