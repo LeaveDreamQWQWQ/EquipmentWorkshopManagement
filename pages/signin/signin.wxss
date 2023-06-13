@@ -1,0 +1,23 @@
+.label{
+    height: 70rpx;
+    margin-left: 50rpx;
+    text-align:left;
+}
+.outer{
+    width: 95%;
+}
+.btn-area1{
+    width: 100%;
+    line-height: 70rpx; 
+    text-align: right; 
+}
+.send{
+    color: rgb(71, 84, 160); 
+}
+.timer{
+    color: rgb(100, 100, 100);
+    font-size: 27rpx;
+}
+
+
+

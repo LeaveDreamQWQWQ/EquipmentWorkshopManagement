@@ -1,0 +1,23 @@
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E3E7E8;
+    height: 180rpx;
+    width: 100%;
+    font-size: 50rpx;
+    font-weight: 700;
+    border-bottom:2px solid #d1d7d8;
+    /* color: rgb(255, 255, 255); */
+    /* text-shadow: 1px 1px 3px rgb(255, 255, 255),-1px -1px 3px rgb(0, 0, 0); */
+}
+
+.title_text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.5ch;
+    width:300rpx ;
+    height: 100rpx;
+    box-shadow:3px 3px 6px 0 rgb(189, 189, 189), -3px -3px 15px 2px rgb(255, 255, 255);
+}

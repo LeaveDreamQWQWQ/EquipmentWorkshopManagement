@@ -1,0 +1,8 @@
+<input style="height: 15vw" placeholder='输入想要修改的邮件接收地址' bindinput='changeEmail'></input>
+<button style="width: 80vw" class="btn" bindtap="makeSure" >确认修改</button>
+<text>批量导入数据的格式：
+【电话 姓名 学号 打印机权限 9号打印机权限 角磨机权限 数控机床权限 激光切割权限 铣床权限 电动工具权限】</text>
+<button style="width: 80vw" class="btn" bindtap="chooseExcel" >选择Excel文件批量导入</button>
+
+<view>PS：该按钮在点击后一段时间后会出现复制链接成功的弹窗，在互联网连接下搜索链接可下载Excel表</view>
+<button style="width: 80%;height: 15%;" class="btn" bindtap="StuExcel" >一键导出历史数据</button>

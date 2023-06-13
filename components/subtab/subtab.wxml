@@ -1,0 +1,27 @@
+<!--components/subtab/subtab.wxml-->
+
+<!-- 生成列表 -->
+<view class="subitem">
+    <view class="log">
+        <!-- 需要用到父页传下来的数据——既列表数据 -->
+        <!-- 同时判断这个设备为什么状态——用于连接不同方法以及改变颜色 -->
+        <view wx:for="{{subtab}}" wx:key="_id" class="subsubitem " bindtap="{{item.state==1?'isAvailable':item.state==2?'disAvailable':item.state==4?'disAvailable':power?'ReFalse':'ShowFalse'}}" data-name="{{item.name}}">
+            <view class="item_icon {{item.state==1?'isAvailable':item.state==2?'disAvailable':item.state==3?'False':'Using'}}"> 
+                <image src="{{item.icon}}" mode="widthFix"></image>
+            </view>
+            <view class="name">{{item.name}}</view>
+            <view class="line"></view>
+            <view class="state">{{item.state==1?'空闲':item.state==2?'他人使用':item.state==3?'故障':'正在使用'}}</view>
+            <!-- <view wx:if="{{item.state==1?false:true}}" class="leavetime">剩余时间：{{item.finishTime-NowTime}}</view> -->
+            <!-- <text bindtap="handletap" data-index="{{index}}" class="log" space="nbsp" >使用登记</text> -->
+        </view>
+    </view>
+    <!-- 设备故障按钮 -->
+    <view class="Button">
+        <view wx:for="{{subtab}}" wx:key="_id" class="submission {{item.state==3&&power?'ReFault_submission':'Fault_submission'}}">
+            <text data-name="{{item.name}}" bindtap="{{item.state==3&&power?'ReFalse':item.state==3?'ShowFalse':'ShowWindow'}}">{{item.state==3&&power?'恢复\n正常':'故障\n报告'}}</text>
+        </view>
+    </view>
+</view>
+
+<!-- {{item.state==3?'check':'故障\n报告'}} -->

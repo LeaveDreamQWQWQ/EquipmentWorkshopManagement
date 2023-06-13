@@ -1,0 +1,25 @@
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 120rpx;
+  border-bottom: 1rpx solid rgb(240,240,240);
+}
+.td {
+    width:40%;
+    justify-content: center;
+    text-align: center;
+    font-size: 35rpx;
+}
+.bg-h{
+  background: #759670;
+  color: white;
+}
+.bg-g{
+  background:  rgb(245,245,245);
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+}

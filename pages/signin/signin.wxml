@@ -1,0 +1,22 @@
+<!-- <view class="illustrate">注册</view> -->
+<view class="outest">
+    <view class="ininfo">
+        <view class="outer">
+            <input class="label" bindinput="getStuid" placeholder="学号" /> 
+        </view>
+        <view class="outer">
+            <input class="label" bindinput="getPhoneNumber" placeholder="手机号码" />     
+        </view>
+        <view class="outer">
+            <input class="label" bindinput="getCode" placeholder="邮箱验证码" /> 
+            <view  class='btn-area1'wx:if="{{stuid}}">
+                <view style="width:30vw"bindtap="send" class="send" wx:if="{{choice}}">发送</view>
+                <view style="width:30vw" class="timer" wx:if="{{!choice}}">{{timer}}</view>
+            </view>  
+        </view>
+    </view>
+
+    <view class="btn-area">
+        <button bindtap="submit" class="btn">提交</button>
+    </view>
+</view>

@@ -1,0 +1,35 @@
+/*欢迎图片*/
+.pic{
+    width: 750rpx;
+}
+
+.wel{
+    background-color: rgb(255, 240 ,240);
+    width: 90%;
+    border-radius: 20rpx;
+    box-shadow: 5rpx 5rpx 20rpx 2rpx rgb(210, 210, 210);
+}
+/*欢迎文字前的图标*/
+.icon{
+    padding-top: 50rpx;
+    padding-left:50rpx ;
+    height: 70rpx;
+    width: 70rpx;
+}
+
+/*欢迎文字*/
+.welcome{
+    padding-left:50rpx ;
+    padding-bottom:50rpx;
+    margin: 20rpx;
+    font-size: 35rpx;
+}
+
+/*“注册”、“查看权限”、“修改信息”的按钮*/
+.btn{
+    margin:20rpx;
+    color: rgb(255, 186, 130);
+    border: 5rpx solid rgb(255, 186, 130);
+    border-radius: 30rpx;
+    box-shadow: 1rpx 1rpx 10rpx 1rpx rgb(210, 210, 210);
+}

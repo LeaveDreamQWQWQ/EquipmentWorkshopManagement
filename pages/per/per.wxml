@@ -1,0 +1,26 @@
+<view>
+  <!-- 表头 -->
+  <view class="tr bg-h">
+    <view class="td">设备名称</view>
+    <view class="td">使用权限</view>
+  </view>
+  <view class="tr" wx:for="{{listData}}">
+    <view class="td">{{item.equ}}</view>
+    <view class="td">
+      <image class="icon" src="{{no}}" hidden="{{item.per}}"></image>
+      <image class="icon" src="{{yes}}" hidden="{{!item.per}}"></image>
+    </view>
+  </view>
+</view>
+<!-- 
+数控雕刻机：{{percnc}}
+</view>
+<view class="each">
+铣床：{{permill}}
+</view>
+<view class="each">
+电动工具（不含角磨机）：{{pertools}}
+</view>
+<view class="each">
+角磨机：{{perangle}}
+</view> -->

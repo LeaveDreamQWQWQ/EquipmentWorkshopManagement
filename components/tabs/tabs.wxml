@@ -1,0 +1,12 @@
+<view class="tabs">
+    <!-- 列表头的生成 -->
+    <view class="tabs_title">
+        <view wx:for="{{tabs}}" wx:key="id" class="title_item {{item.isActive?'action':'disactive'}} " bindtap="handletap" data-index="{{index}}">
+            <image src="{{item.icon}}" mode="widthFix" class="title_icon "></image>
+        </view>
+    </view>
+    <!-- 列表内容占位符 -->
+    <view class="tabs_content">
+        <slot></slot>
+    </view>
+</view>

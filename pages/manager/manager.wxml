@@ -1,0 +1,15 @@
+<view class="container">
+<view class="title">管理员管理页面</view>
+<view class="top_tip">个人权限修改 设备状态修改</view>
+</view>
+<view>
+    <button class="btn" bindtap="topeople" >个人权限修改</button>
+</view>
+
+<view>
+    <button class="btn" bindtap="totools" >设备状态监控</button>
+</view>
+
+<view>
+    <button class="btn" bindtap="toothers" >其他设置修改</button>
+</view>

@@ -1,0 +1,17 @@
+/* pages/tools/tools.wxss */
+.btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 186, 130);
+    margin: 20rpx;
+    border: 5rpx solid rgb(255, 186, 130);
+    border-radius: 50rpx;
+}
+.imagesize{
+    display:flex;                   
+    justify-content: center;        
+}
+
+.imagesize image { 
+     width:200rpx;
+     height:200rpx;
+}

@@ -1,0 +1,47 @@
+<!-- <view>
+<navigator url="/pages/demo2/demo2"  data-equipment="3D printer" id="printer" bindtap="handletap" > 
+=======
+<view>
+
+<navigator url="/pages/register/register"  data-equipment="3D printer" id="printer" bindtap="handletap" > 
+
+<image src="https://cdn0.iconfinder.com/data/icons/3d-printing-solid-1/48/3d_printer_printing-512.png"  mode="widthFix" >
+</image>
+</navigator>
+
+<navigator url="/pages/register/register" data-equipment="Angle grinder" id="Anglegrinder" bindtap="handletap"> 
+<image src="https://cdn4.iconfinder.com/data/icons/electric-work-tools/76/Angle_grinder-512.png"   mode="widthFix" >
+</image>
+</navigator>
+
+</view> -->
+
+<!-- <view class="tabbar">
+<view class="subtabbar">
+<image src="https://cdn0.iconfinder.com/data/icons/3d-printing-solid-1/48/3d_printer_printing-512.png"  mode="widthFix" class="subsubtabbar">
+</image>
+</view>
+
+<view class="subtabbar">
+<image src="https://cdn4.iconfinder.com/data/icons/electric-work-tools/76/Angle_grinder-512.png"     mode="widthFix" class="subsubtabbar">
+</image>
+</view>
+
+</view>
+
+<view>{{equipment}}</view> -->
+
+<!-- 这些代码就是用 页面展示时获取到的设备数据，去生成列表 -->
+<!-- 如果要具体去探究我怎么实现的就要去看我的组件了（tabs和subtabs） -->
+
+<tabs tabs="{{tabs}}" binditemchange="HandleItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+        <subtab subtab="{{subtab_3Dprinter}}" power="{{power}}" NowTime="{{NowTime}}" bindReFalse="ReFalse"  bindSetFalse="SetFalse" bindisAvailable="isAvailable" bindShowWindow="ShowWindow" binddisAvailable="disAvailable"></subtab>
+    </block>
+    <block wx:else>
+        <subtab subtab="{{other_equipment}}" power="{{power}}" NowTime="{{NowTime}}" bindReFalse="ReFalse" bindSetFalse="SetFalse" bindisAvailable="isAvailable" bindShowWindow="ShowWindow" binddisAvailable="disAvailable"></subtab>
+    </block></tabs>
+
+
+<window ShowWindow="{{ShowWindow}}" bindHideWindow="HideWindow" bindShowWindow="ShowWindow" bindSetFalse="SetFalse"></window>
+

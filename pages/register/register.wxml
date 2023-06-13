@@ -1,0 +1,69 @@
+<view class="outest">
+    <view class="ininfo">
+        <!-- 自动获取设备信息 -->
+        <view class="outer">
+            <view class="left">使用设备</view>
+            <view class="wrap">
+                <view class="label" >{{selectedEqu}}</view> 
+            </view>
+        </view>
+
+        <!-- 输入预约使用时长--小时 -->
+        <view class="outer" wx:if="{{book}}">
+            <view class="left">开始时间</view>
+            <view class="wrap">
+                <picker mode="time" value="time" start="08:30" end="22:00" bindchange="changeTime">
+                    <text class="label">{{time}}</text>
+                    <text style="font-size: 25rpx" class="label" >▼</text>
+                </picker>  
+            </view>
+        </view>
+        
+        <!-- 输入预约使用时长--小时 -->
+        <view class="outer">
+            <view class="left">使用时长</view>
+            <view class="wrap">
+              <input class="label" bindinput="hours" placeholder="请输入小时"/>   
+            </view>
+        </view>
+
+        <!-- 输入预约使用时长--分钟 -->
+        <view class="outer">
+            <view class="left"></view>
+            <view class="wrap">
+                <input class="label" bindinput="minutes" placeholder="请输入分钟"/>     
+            </view>
+        </view>
+    </view>
+    <view class="btn-area">
+        <button bindtap="getInfo" class="btn" disabled="{{disabled}}">提交</button>
+    </view>
+    <view class="warning">
+      <view class="labor">{{"请准备好劳保："+labor}}</view>
+    </view>
+    <view class="warning" hidden="{{waitingList.length==0}}">
+      <view style="padding-bottom: 30rpx;">
+        <view class="labor">请注意：该设备已在以下时间段被预约</view>
+        <view class="tr">
+          <view class="td">开始时间</view>
+          <view class="td">结束时间</view>
+        </view>
+        <view class="tr" wx:for="{{waitingList}}">
+          <view class="td">{{item.startTime}}</view>
+          <view class="td">{{item.finishTime}}</view>
+        </view>
+      </view>
+    </view>
+</view>
+<!-- <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" >
+  <picker-view-column>
+    <view wx:for="{{hours}}" wx:key="{{hours}}" style="line-height: 50px; text-align: center;">{{item}}时</view>
+  </picker-view-column>
+  <picker-view-column>
+    <view wx:for="{{minutes}}" wx:key="{{minutes}}" style="line-height: 50px; text-align: center;">{{item}}分</view>
+  </picker-view-column>
+</picker-view> -->
+
+<!-- <view wx:if="{{isSubmit}}">
+  {{warn ? warn : "预约设备："+name+"，开始时间："+start+"，使用时间："+time}}
+</view> -->

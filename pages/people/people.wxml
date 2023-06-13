@@ -1,0 +1,20 @@
+<input style="height: 10vw" placeholder='输入姓名' bindinput='addName'></input>
+<input style="height: 10vw" placeholder='输入学号' bindinput='addStuid'></input>
+<button style="width: 80vw" class="btn" bindtap="addData" >添加新用户</button>
+<input style="height: 10vw" placeholder='输入查询者/修改者学号或工号' bindinput='uptStuId'></input>
+<button style="width: 80vw" class="btn" bindtap="getData" >查询/更新用户数据</button>
+<view class="testtext" >
+    <text>用户姓名：{{stuName}}</text>
+</view>
+<view class="testtext" >
+    <text>用户学号：{{stuid}}</text>
+</view>
+<button style="width: 80%;height: 12%;" class="btn" bindtap="updper3d" >3D打印机权限：{{per3d}}</button>
+<button style="width: 80%;height: 12%;" class="btn" bindtap="updpermill" >激光切割机权限：{{permill}}</button>
+<button style="width: 80%;height: 12%;" class="btn" bindtap="updpercnc" >数控雕刻机权限：{{percnc}}</button>
+<button style="width: 80%;height: 12%;" class="btn" bindtap="updperlaser" >铣床权限：{{perlaser}}</button>
+<button style="width: 80%;height: 12%;" class="btn" bindtap="updpertools" >电动工具权限：{{pertools}}</button>
+<button style="width: 80%;height: 12%;" class="btn" bindtap="updper3d9" >九号大打印机权限：{{per3d9}}</button>
+<button style="width: 80%;height: 12%;" class="btn" bindtap="updperangle" >角磨机权限：{{perangle}}</button>
+<button style="width: 80%;height: 12%;" class="btn1" bindtap="updpower" >管理员权限：{{power}}</button>
+<button style="width: 80%;height: 12%;" class="btn2" bindtap="delData" >删除该用户</button>

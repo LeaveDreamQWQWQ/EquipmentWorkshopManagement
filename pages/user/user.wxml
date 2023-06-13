@@ -1,0 +1,25 @@
+<view wx:if="{{signed}}">
+    <image class="icon" src="../../icon/happy.png"></image>
+    <view class="welcome">{{stuName}}，欢迎使用SDIM设备工坊！</view>
+</view>
+
+<view wx:else>
+    <image class="icon" src="../../icon/lamp.png"></image>
+    <view class="welcome">快点击下面的按钮注册吧！</view>
+</view>
+
+<view>
+    <button class="btn" bindtap="signin" wx:if="{{!signed}}">注册</button>
+</view>
+
+<view>
+    <button class="btn" bindtap="seeper">查看权限</button>
+</view>
+
+<view wx:if="{{power}}">
+    <button class="btn" bindtap="manager">管理页面</button>
+</view>
+
+<view>
+    <button class="btn" bindtap="logout" wx:if="{{signed}}">退出登录</button>
+</view>

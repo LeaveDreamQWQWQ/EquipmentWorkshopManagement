@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "history_item":"../../components/history_item/history_item"
+  }
+}

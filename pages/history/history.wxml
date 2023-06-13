@@ -1,0 +1,2 @@
+<view class ="title"><view class="title_text">使用历史</view></view>
+<history_item history = "{{history}}" bindEndUse = "EndUse" bindEndWait="EndWait"></history_item>

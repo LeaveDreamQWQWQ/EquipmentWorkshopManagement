@@ -1,0 +1,8 @@
+/* pages/others/others.wxss */
+.btn{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 186, 130);
+    margin: 10rpx;
+    border: 10rpx solid rgb(255, 186, 130);
+    border-radius: 30rpx;
+}

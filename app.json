@@ -1,0 +1,49 @@
+{
+    "pages": [
+        "pages/Home/Home",
+        "pages/user/user",
+        "pages/register/register",
+        "pages/history/history",
+        "pages/signin/signin",
+        "pages/index/index",
+        "pages/per/per",
+        "pages/logs/logs",
+        "pages/manager/manager",
+        "pages/people/people",
+        "pages/tools/tools",
+        "pages/others/others"
+
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "尉工最爱小程序",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/Home/Home",
+                "text": "home",
+                "iconPath": "icon/Home1.png",
+                "selectedIconPath": "icon/Home2.png"
+            },
+            {
+                "pagePath": "pages/history/history",
+                "text": "history",
+                "iconPath": "icon/Home1.png",
+                "selectedIconPath": "icon/Home2.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "me",
+                "iconPath": "icon/head1.png",
+                "selectedIconPath": "icon/head2.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

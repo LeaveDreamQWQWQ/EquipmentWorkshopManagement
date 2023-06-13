@@ -1,0 +1,15 @@
+<!--弹窗-->
+<view class="modal-mask" bindtap="HideWindow" wx:if="{{ShowWindow}}" catchtouchmove="preventTouchMove"></view>
+<view class="modal-dialog" wx:if="{{ShowWindow}}">
+    <view class="modal-title">故障报告</view>
+    <view class="modal-content">
+        <view class="modal-text">系统将自动向管理员报告故障</view>
+        <view class="modal-input">
+            <input placeholder-class="input-holder" type="text" maxlength="100" bindinput="GetInput" class="input" placeholder="请描述故障（100个字以内）"></input>
+        </view>
+    </view>
+    <view class="modal-footer">
+        <view class="btn-cancel" bindtap="HideWindow" data-status="cancel">取消</view>
+        <view class="btn-confirm" bindtap="SetFalse" data-status="confirm">确定</view>
+    </view>
+</view>

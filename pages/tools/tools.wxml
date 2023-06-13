@@ -1,0 +1,18 @@
+<view class='imagesize' wx:if="{{!buttonMode || error==3}}">
+      <image src="/icon/wait.gif" class='in-image'>
+      </image>
+</view>
+
+<view class='imagesize' wx:if="{{buttonMode && error==1}}">
+      <image src="/icon/OK.gif" class='in-image'>
+      </image>
+</view>
+
+<view class='imagesize' wx:if="{{buttonMode && error==2}}">
+      <image src="/icon/error.gif" class='in-image'>
+      </image>
+</view>
+
+<button style="width: 80%;height: 15%;" class="btn" bindtap="Button0" wx:if="{{!buttonMode}}">启动故障监听</button>
+<button style="width: 80%;height: 15%;" class="btn" bindtap="Button1" wx:elif="{{buttonMode}}">关闭故障监听</button>
+

@@ -1,0 +1,27 @@
+/* pages/people/people.wxss */
+.btn{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 186, 130);
+    margin: 10rpx;
+    border: 10rpx solid rgb(255, 186, 130);
+    border-radius: 30rpx;
+}
+.btn1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 247, 255);
+    margin: 10rpx;
+    border: 10rpx solid rgb(0, 247, 255);
+    border-radius: 30rpx;
+}
+.btn2{
+    color: rgb(255, 255, 255);
+    background-color: rgb(250, 0, 0);
+    margin: 10rpx;
+    border: 10rpx solid rgb(255, 0, 0);
+    border-radius: 30rpx;
+}
+.testtext{
+    text-align: center;
+    height: 30px;
+}
+/*style="width: 80vw;height: 12vw;"*/

@@ -1,0 +1,18 @@
+<!--components/history_item/history_item.wxml-->
+
+<view class="subitem">
+    <view class="log">
+        <!-- 需要用到父页传下来的数据——既列表数据 -->
+        <!-- 同时判断这个设备为什么状态——用于连接不同方法以及改变颜色 -->
+        <view wx:for="{{history}}" wx:key="index" class="subsubitem {{item.state==1?'finish':item.state==2?'using':'waiting'}}" bindtap="{{item.state==2?'EndUse':item.state==3?'Endwait':''}}" data-name="{{item.name}}">
+            <view class="Name name" wx:if="{{item.state==1}}">{{item.name}}</view>
+            <view class="Name2 name" wx:if="{{item.state==2}}">{{item.name}}</view>
+            <view class="Name3 name" wx:if="{{item.state==3}}">{{item.name}}</view>
+            <view class="Time">开始时间：{{item.startTime}}</view>
+            <view class="Time">{{item.state==1?'完成时间：':'预计完成：'}}{{item.finishTime}}</view>
+            <view class="state" wx:if="{{item.state==1}}">使用完成</view>
+            <view class="state" wx:if="{{item.state==2}}">使用中</view>
+            <view class="state" wx:if="{{item.state==3}}">未开始</view>
+        </view>
+    </view>
+</view>

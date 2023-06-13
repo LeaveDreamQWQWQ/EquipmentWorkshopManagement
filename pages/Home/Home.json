@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "tabs":"../../components/tabs/tabs",
+    "subtab":"../../components/subtab/subtab",
+    "window":"../../components/window/window"
+  }
+}

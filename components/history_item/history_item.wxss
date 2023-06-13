@@ -1,0 +1,86 @@
+.subitem {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  background-color: #E3E7E8;
+}
+
+.log {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.subsubitem {
+  width: 700rpx;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 26rpx;
+  background-color: rgb(255, 255, 255);
+  margin-top: 25rpx;
+  overflow: hidden;
+  box-shadow: 3px 3px 6px 0 rgb(189, 189, 189), -3px -3px 10px 2px rgb(255, 255, 255);
+}
+
+.name {
+  line-height: normal;
+  width: 100%;
+  height: 87rpx;
+  display: flex;
+  font-size: 40rpx;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Name {
+  background-color: #D9D9D9;
+}
+
+.Name2 {
+  background-color: #759670;
+  color: rgb(255, 255, 255);
+}
+
+.Name3 {
+  background-color: rgb(223, 176, 106);
+  color: rgb(255, 255, 255);
+}
+
+.Time {
+  width: 80%;
+  /* height: 22px; */
+  align-content: space-around;
+  font-size: 30rpx;
+  margin-left: 22px;
+  margin-top: 10px;
+}
+
+.state {
+  text-align: right;
+  margin-right: 20rpx;
+  /* width: 100px; */
+  margin-bottom: 10rpx;
+}
+
+.item_icon {
+  width: 130rpx;
+}
+
+.finish {
+  background-color: rgb(247, 247, 247);
+}
+
+.using {
+  color: #759670;
+  font-weight:700;
+}
+
+.waiting {
+  color: rgb(223, 176, 106);
+  font-weight: 700;
+}
