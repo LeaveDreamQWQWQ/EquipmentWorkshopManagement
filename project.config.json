@@ -55,6 +55,6 @@
         ],
         "include": []
     },
-    "appid": ""//输入你的ID,
+    "appid": "", // 填写你的ID
     "condition": {}
 }
