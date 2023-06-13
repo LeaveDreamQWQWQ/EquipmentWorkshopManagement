@@ -37,6 +37,7 @@ After that, please check all pages including `.js` and `.config` documents, you 
   
 - **present database**
   | data name | types | data types | usage | explanation |
+  | --------- | ----- | ---------- | ----- | ----------- |
   | name | equipment | `String` | Equipment name | need to indicate the number of equipment (number of 3D printers) |
   | stuName | person | `String` | Enter the name of the person using the information | Initialize to empty set and enter user name |
   | startTime | time | `String` | Enter the start time of the device | When the user makes an appointment, personal information is entered together, forcing the end of the process or the completion of data conversion (current data to historical data) after reset |
