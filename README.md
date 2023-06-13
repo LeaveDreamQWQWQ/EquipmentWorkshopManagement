@@ -12,6 +12,8 @@ After that, please check all pages including `.js` and `.config` documents, you 
   | data name | types | data types | usage | explanation |
   | --------- | ----- | ---------- | ----- | ----------- |
   | name | equipment | `String` | equipment name | need to indicate the number of equipment (number of 3D printers) |
+  | equipment_class | equipment | `String` | docking labor insurance reminder | It is used to distinguish the type of equipment, such as 3D printer and engraving machine. Just one big category. Many sub-devices can be placed in this class, such as the number and number of printers |
+  
   
 
 
